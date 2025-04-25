@@ -1,0 +1,6 @@
+[submodule "gmonitor-bot"]
+	path = gmonitor-bot
+	url = https://github.com/GalinaMonitor/gmonitor-bot
+[submodule "gmonitor-api-gateway"]
+	path = gmonitor-api-gateway
+	url = https://github.com/GalinaMonitor/gmonitor-api-gateway
