@@ -53,6 +53,8 @@ services:
       interval: 5s
       timeout: 10s
       retries: 10
+    volumes:
+      - kafka_data:/var/lib/kafka/data
 
   kafka-ui:
     container_name: kafka-ui
