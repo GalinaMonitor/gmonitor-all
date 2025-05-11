@@ -29,7 +29,7 @@ services:
   faststream-gmonitor-api-gateway:
     <<: *base
     container_name: faststream-gmonitor-api-gateway
-    entrypoint: [ "uv", "run", "faststream", "run", "src/broker:app" ]
+    entrypoint: ["uv", "run", "faststream", "run", "src/broker:app"]
     build:
       context: gmonitor-api-gateway
       dockerfile: Dockerfile
@@ -63,7 +63,7 @@ services:
     container_name: kafka-ui
     image: provectuslabs/kafka-ui:latest
     ports:
-      - 8082:8080
+      - "8082:8080"
     environment:
       DYNAMIC_CONFIG_ENABLED: true
       AUTH_TYPE: "LOGIN_FORM"
